@@ -1,0 +1,136 @@
+body {
+    background-color: #f4fafd; /* Fondo blanco */
+    margin: 0;
+    padding: 0;
+}
+
+header { /* Fondo de la cabecera en azul polvoriento */
+    padding: 2rem 0;
+    font-family: "Luckiest Guy", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.custom-color {
+    color: #5886af; /* Color personalizado */
+}
+
+
+.logo{
+    border-radius: 60%;
+    border: 3px solid #eac77d; /* Borde de color #eac77d */
+    box-shadow: 0px 0px 10px 5px #eac77d; /* Sombra de color #eac77d */
+}
+
+
+.navbar-brand {
+    margin-right: 8rem; /* Ajuste el margen derecho del logo */
+}
+
+.navbar-nav {
+    flex: 1;
+    justify-content: center; /* Centra los elementos de navegación */
+    
+}
+
+.nav-link {
+    color: #5886af;
+    font-size: 35px;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
+.banner {
+    background-color: #eac77d; /* Fondo del banner en crema delicada */
+    padding: 1rem;
+    text-align: center; /* Centrar el texto opcionalmente */
+}
+
+.banner p {
+    max-width: 600px; /* Controlar el ancho del párrafo */
+    margin: 0 auto;   /* Centrarlo dentro del contenedor */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+.sobremi{
+    max-width: 600px; /* Controlar el ancho del párrafo */
+    margin: 0 auto;   /* Centrarlo dentro del contenedor */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin-bottom: 25px;
+}
+
+.title{
+    color: #5886af;
+}
+
+.carousel {
+    margin: 2rem 0;
+    font-family: "Luckiest Guy", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.profile-pic {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    animation: floating 3s ease-in-out infinite;
+    border: 3px solid #eac77d; /* Borde de color #eac77d */
+    box-shadow: 0px 0px 10px 5px #eac77d; /* Sombra de color #eac77d */
+}
+
+
+@keyframes floating {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.project {
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: #5886af;; /* Fondo de pie de página en gris oscuro */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-family: "Luckiest Guy", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    border-top: solid 2px #eac77d;
+}
+
+.social-icons a {
+    padding: 15px;
+}
+
+.social-icons {
+    margin-bottom: 25px;
+}
+
+/* Centrar verticalmente las secciones */
+.section {
+    display: flex;
+    text-align: center;
+    justify-content: center;  /* Centrar horizontalmente */
+    align-items: center;      /* Centrar verticalmente */
+    font-family: "Luckiest Guy", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input{
+    border: solid 1px #eac77d;
+}

@@ -5,11 +5,10 @@ body {
 }
 
 header { /* Fondo de la cabecera en azul polvoriento */
-    padding: 2rem 0;
     font-family: "Luckiest Guy", serif;
-    font-weight: 400;
     font-style: normal;
     font-size: 18px;
+    box-shadow: 0px 4px 15px #5886af;
 }
 
 .custom-color {
@@ -24,14 +23,9 @@ header { /* Fondo de la cabecera en azul polvoriento */
 }
 
 
-.navbar-brand {
-    margin-right: 8rem; /* Ajuste el margen derecho del logo */
-}
-
 .navbar-nav {
     flex: 1;
     justify-content: center; /* Centra los elementos de navegación */
-    
 }
 
 .nav-link {
@@ -39,6 +33,10 @@ header { /* Fondo de la cabecera en azul polvoriento */
     font-size: 35px;
     text-decoration: none;
     padding: 0 1rem;
+}
+
+.nav-link:hover {
+    color: #eac77d;
 }
 
 .banner {
@@ -89,20 +87,16 @@ header { /* Fondo de la cabecera en azul polvoriento */
 }
 
 .project {
-    margin-bottom: 2rem;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 25px;
 }
 
-footer {
-    background-color: #5886af;; /* Fondo de pie de página en gris oscuro */
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    font-family: "Luckiest Guy", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    border-top: solid 2px #eac77d;
+.img-project{
+    box-shadow: 0px 4px 15px #5886af;
+    border-radius: 10%;
 }
+
 
 .social-icons a {
     padding: 15px;
@@ -133,4 +127,113 @@ form {
 
 .input{
     border: solid 1px #eac77d;
+}
+
+.whatsapp-button { 
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    width: 60px; 
+    height: 60px; 
+    background-color: #25D366; 
+    border-radius: 50%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    cursor: pointer; 
+   
+} 
+    
+.whatsapp-button a { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    height: 100%; 
+    text-decoration: none; 
+    color: #fff; 
+   
+
+} 
+    
+.whatsapp-icon { 
+    font-size: 30px; 
+    color: #fff; 
+   
+}
+
+.whatsapp-button:hover { transform: scale(1.5); /* Escala el icono al 150% de su tamaño original */ }
+
+/* Asegúrate de que no haya contorno ni en foco ni en hover */ 
+.whatsapp-button a:focus, 
+.whatsapp-button a:active, 
+.whatsapp-button a:hover { border: none; outline: none; text-decoration: none; }/* Quita cualquier subrayado */
+
+footer {
+    background-color: #5886af; /* Fondo del pie de página */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: "Luckiest Guy", serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-content div {
+    margin: 10px;
+}
+
+.footer-content h4 {
+    margin-bottom: 15px;
+}
+
+.footer-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    margin-bottom: 10px;
+}
+
+.footer-content .quick-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.footer-content .quick-links ul li a:hover {
+    color: #eac77d; /* Color al pasar el mouse */
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #eac77d; /* Color al pasar el mouse */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #eac77d; /* Línea superior */
+    padding-top: 10px;
+}
+
+.politicas{
+    color: white;
+    text-decoration: none;
+}
+
+.politicas:hover{
+    color: #eac77d;
+    text-decoration: none;
 }
